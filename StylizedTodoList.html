@@ -1,0 +1,93 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >My To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>My To-Do List</h2>
+    <ul class="todo-list">
+        <li>
+            <input type="checkbox" id="task1">
+            <label for="task1">Explore gaming keyboards</label>
+            <ul class="sub-item">
+                <li><a href="https://store.example.com" class="sub-item-link" target="_blank">Store link</a></li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="task2">
+            <label for="task2">Finish the report</label>
+            <ul class="sub-item">
+                <li><a href="https://access.example.com" class="sub-item-link" target="_blank">Request Access</a></li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="task3">
+            <label for="task3">View Phone's Warranty</label>
+            <ul class="sub-item">
+                <li><a href="https://receipts.example.com" class="sub-item-link" target="_blank">View Receipts</a></li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="task4">
+            <label for="task4">Check Processor Specs</label>
+            <ul class="sub-item">
+                <li><a href="https://model.example.com" class="sub-item-link" target="_blank">View Model Number</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+/* Remove default list styles */
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style sub-item list */
+.sub-item {
+    list-style: none;
+    padding-left: 20px;
+}
+
+/* Style links */
+.sub-item-link {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Hover effect */
+.sub-item-link:hover {
+    color: red;
+}
+
+/* Active (click) effect */
+.sub-item-link:active {
+    color: green;
+}
+
+/* Focus outline for accessibility */
+.sub-item-link:focus {
+    outline: 2px solid blue;
+}
+
+/* Visited link color */
+.sub-item-link:visited {
+    color: purple;
+}
+
+
+** end of undefined **
+
