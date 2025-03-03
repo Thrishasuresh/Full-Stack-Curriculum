@@ -1,0 +1,99 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h4>Full Name:</h4>
+            <input type="text" id="name" placeholder="Enter Your Name">
+
+            <h4>Email:</h4>
+            <input type="email" id="email" placeholder="Enter Your Email">
+
+            <h4>Position:</h4>
+            <select id="position">
+                <option selected>Select a Position</option>
+                <option>Developer</option>
+                <option>Designer</option>
+                <option>Manager</option>
+            </select>
+
+            <br><br>
+
+            <!-- Fieldset for Radio Group -->
+            <fieldset class="radio-group">
+                <legend>Availability</legend>
+                <input type="radio" id="option1" name="availability">
+                <label for="option1">Available</label>
+
+                <input type="radio" id="option2" name="availability">
+                <label for="option2">Unavailable</label>
+
+                <input type="radio" id="option3" name="availability">
+                <label for="option3">Busy</label>
+            </fieldset>
+
+            <h4>Why do you want this job?</h4>
+            <textarea id="message" placeholder="Write your answer here..."></textarea>
+
+            <br>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+.radio-group:checked
+{
+
+}
+input:focus,
+textarea:focus {
+  border-color: blue; /* Change to any color you prefer */
+  outline: none; /* Optional: Removes default browser outline */
+}
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+button:hover {
+  background-color: lightblue; /* Change to any color you prefer */
+}
+.radio-group input[type="radio"]:checked {
+  border-color: blue; /* Change to your preferred border color */
+  background-color: lightblue; /* Change to your preferred background color */
+  box-shadow: 0 0 5px blue; /* Adds a subtle glow effect */
+}
+.radio-group input[type="radio"]:checked + label {
+  color: blue; /* Change to your preferred color */
+  font-weight: bold; /* Optional: Makes selected label stand out */
+}
+input:nth-child(1) {
+  border-color: blue; /* Change border color */
+  background-color: lightgray; /* Change background */
+  font-weight: bold; /* Make text bold */
+}
+
+
+
+** end of undefined **
+
